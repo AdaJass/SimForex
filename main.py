@@ -1,9 +1,7 @@
 from patterns import pattern as pt
 import similarity as sim
-from pandas import DataFrame as dtf
+from data import data
 import hxt
-
-data = dtf()
 
 ind1=[]
 ind2=[]
