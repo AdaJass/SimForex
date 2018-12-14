@@ -7,7 +7,7 @@ ind1=[]
 ind2=[]
 ind3=[]
 
-for i in range(len(data)):
+for i in range(200,len(data.df)):
     tempt = pt.build(data, i)
     if sim.sim(tempt, pt.standard) < pt.threshold:
         end_pt = i + pt.pt_length
@@ -18,7 +18,3 @@ for i in range(len(data)):
 ind1.sort()
 ind2.sort()
 ind3.sort()
-
-
-
-
