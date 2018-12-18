@@ -10,6 +10,8 @@ df['date']=df['date'].apply(lambda x:datetime.strptime(x, '%Y.%m.%d-%H:%M'))
 
 def aver_volume_of_time(t):
     v = []
+    # print('this is t: ',t)
+    # print('this is df.date: ',df.date)
     subset = df[df.date < t]
     index = -1
     for i in range(30):
